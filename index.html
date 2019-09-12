@@ -276,7 +276,7 @@
       }
 
       function convert(){
-        var resultCode = ``
+        var resultCode = ''
         var childNodes = document.querySelector('body > div.site-wrapper > div > div > div.inner.cover > div.note-editor.note-frame.panel.panel-default > div.note-editing-area > div.note-editable').childNodes[0]
 
         // 이거 자체는 이터레이터로 파싱
@@ -287,7 +287,7 @@
 
 
             // 컬러 특정된 거 있으면 파싱
-            var textColorTag = ``
+            var textColorTag = ''
             if(typeof childrenItem['style'] != 'undefined'
               && typeof childrenItem['style']['color'] != 'undefined'){
 
@@ -322,8 +322,6 @@
               // 순수 글 파싱
               if(childrenItem.nodeName == '#text'
                 && typeof childrenItem['nodeValue'] != 'undefined'){
-                  // 얘도 화이트로
-                  // resultCode += `(TODO:순수텍스트:${childrenItem.nodeValue})`
 
                   // 공백이 아닌 경우, 색상코드 삽입
                   if(childrenItem.nodeValue.trim().length != 0)
