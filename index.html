@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./favicon.ico">
+
+    <title>D.Va Engine - Workshop Title Styler</title>
+
+    <!-- include summernote css/js -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+    <style>
+      .note-editor.note-frame .note-editing-area .note-editable, .note-editor.note-frame .note-status-output:empty {
+        background-color: #303030;
+      }
+      #footer
+      {
+          opacity: 1;
+          -moz-transition:all 0.5s ease-in-out;
+          -o-transition:all 0.5s ease-in-out;
+          transition:all 0.5s ease-in-out;
+          -webkit-transition:all 0.5s ease-in-out;
+      }
+      #footer.hide
+      {
+          opacity: 0;
+          overflow:none;
+          -moz-transition:all 0.5s ease-in-out;
+          -o-transition:all 0.5s ease-in-out;
+          transition:all 0.5s ease-in-out;
+          -webkit-transition:all 0.5s ease-in-out;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div id="footer" class="masthead clearfix">
+            <div class="inner">
+              
+              <h3 class="masthead-brand">
+                <img src="./logo.png" alt="logo">
+                Workshop Title Styler
+              </h3>
+              <nav>
+                <ul class="nav masthead-nav">
+                  <li class="active"><a href="#">Edit</a></li>
+                  <!-- <li class="deactive"><a href="https://github.com/hmmhmmhm/">Github</a></li> -->
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="inner cover">
+            <h1 class="cover-heading">Decorate the title!</h1>
+            <p class="lead">Color the title of the Overwatch Workshop Room or paste special emoticons! Click on the "Copy Converted Code" button and paste the character into the workshop room title.</p>
+
+            <p class="lead">
+              <a onclick="convert()" class="btn btn-lg btn-default">Copy Converted Code</a>
+            </p>
+            <div id="title"></div>
+            
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <div class="panel-heading">Emoticon & Symbols<br>(You can put the Symbol using Drag & Drop)</div>
+                <div class="panel-body" style="background: #303030;">
+                    <img src="./C0000000001F944.png" style="width: 30px;">
+                    <img src="./C0000000001F945.png" style="width: 30px;">
+                    <img src="./C0000000001F943.png" style="width: 30px;">
+                    <img src="./C0000000001F942.png" style="width: 30px;">
+                    <img src="./C0000000001F941.png" style="width: 30px;">
+                    <img src="./C0000000001F940.png" style="width: 30px;">
+                    <img src="./C0000000001F939.png" style="width: 30px;">
+                    <img src="./C0000000001F938.png" style="width: 30px;">
+                    <img src="./C0000000001F937.png" style="width: 30px;">
+                    <img src="./C0000000001F936.png" style="width: 30px;">
+                    <img src="./C0000000001F935.png" style="width: 30px;">
+                    <img src="./C0000000001F934.png" style="width: 30px;">
+                    <img src="./C0000000001F933.png" style="width: 30px;">
+                    <img src="./C0000000001F932.png" style="width: 30px;">
+                    <img src="./C0000000001F931.png" style="width: 30px;">
+                    <img src="./C0000000001F930.png" style="width: 30px;">
+                    <img src="./C0000000001F929.png" style="width: 30px;">
+                    <img src="./C0000000001F928.png" style="width: 30px;">
+                    <img src="./C0000000001F927.png" style="width: 30px;">
+                    <img src="./C0000000001F926.png" style="width: 30px;">
+                    <img src="./C0000000001F925.png" style="width: 30px;">
+                    <img src="./C0000000001F924.png" style="width: 30px;">
+                    <img src="./C0000000001F923.png" style="width: 30px;">
+                    <img src="./C0000000001F922.png" style="width: 30px;">
+                    <img src="./C0000000001F824.png" style="width: 30px;">
+                    <img src="./C0000000001F461.png" style="width: 30px;">
+                    <img src="./C0000000001F460.png" style="width: 30px;">
+                    <img src="./C0000000001F458.png" style="width: 30px;">
+                    <img src="./C0000000001F457.png" style="width: 30px;">
+                    <img src="./C0000000001F456.png" style="width: 30px;">
+                    <img src="./C0000000001F455.png" style="width: 30px;">
+                    <img src="./C0000000001F454.png" style="width: 30px;">
+                    <img src="./C0000000001F93F.png" style="width: 30px;">
+                    <img src="./C0000000001F93E.png" style="width: 30px;">
+                    <img src="./C0000000001F93D.png" style="width: 30px;">
+                    <img src="./C0000000001F93C.png" style="width: 30px;">
+                    <img src="./C0000000001F93B.png" style="width: 30px;">
+                    <img src="./C0000000001F93A.png" style="width: 30px;">
+                    <img src="./C0000000001F92F.png" style="width: 30px;">
+                    <img src="./C0000000001F92E.png" style="width: 30px;">
+                    <img src="./C0000000001F92D.png" style="width: 30px;">
+                    <img src="./C0000000001F92C.png" style="width: 30px;">
+                    <img src="./C0000000001F92B.png" style="width: 30px;">
+                    <img src="./C0000000001F92A.png" style="width: 30px;">
+                    <img src="./C0000000001F70D.png" style="width: 30px;">
+                    <img src="./C0000000001F45F.png" style="width: 30px;">
+                    <img src="./C0000000001CCC8.png" style="width: 30px;">
+                    <img src="./C0000000001CCC7.png" style="width: 30px;">
+                    <img src="./C0000000001CC15.png" style="width: 30px;">
+                    <img src="./C0000000001CC14.png" style="width: 30px;">
+                    <img src="./C0000000001CC13.png" style="width: 30px;">
+                    <img src="./C0000000001BEB1.png" style="width: 30px;">
+                    <img src="./C0000000001BEB0.png" style="width: 30px;">
+                    <img src="./C0000000001BEAF.png" style="width: 30px;">
+                    <img src="./C0000000001BD59.png" style="width: 30px;">
+                    <img src="./C0000000001BD54.png" style="width: 30px;">
+                    <img src="./C0000000001BD47.png" style="width: 30px;">
+                    <img src="./C0000000001BCF3.png" style="width: 30px;">
+                    <img src="./C0000000001B650.png" style="width: 30px;">
+                    <img src="./C0000000001B45A.png" style="width: 30px;">
+                    <img src="./C000000000190DE.png" style="width: 30px;">
+                    <img src="./C000000000190DF.png" style="width: 30px;">
+                    <img src="./C000000000190E0.png" style="width: 30px;">
+                    <img src="./C0000000001D069.png" style="width: 30px;">
+                    <img src="./C0000000001D068.png" style="width: 30px;">
+                    <img src="./C0000000001D067.png" style="width: 30px;">
+                    <img src="./C0000000001D066.png" style="width: 30px;">
+                    <img src="./C0000000001D065.png" style="width: 30px;">
+                    <img src="./C0000000001D064.png" style="width: 30px;">
+                    <img src="./C0000000001D063.png" style="width: 30px;">
+                    <img src="./C0000000001D06A.png" style="width: 30px;">
+                    <img src="./C0000000001935F.png" style="width: 30px;">
+                    <img src="./C0000000001B943.png" style="width: 30px;">
+
+                    <img src="./C00000000002286.png" style="width: 30px;">
+                    <img src="./C00000000002285.png" style="width: 30px;">
+                    <img src="./C00000000001289.png" style="width: 30px;">
+                    <img src="./C00000000001288.png" style="width: 30px;">
+                    <img src="./C00000000001287.png" style="width: 30px;">
+                    <img src="./C00000000001286.png" style="width: 30px;">
+                    <img src="./C00000000001285.png" style="width: 30px;">
+                    <img src="./C0000000000227D.png" style="width: 30px;">
+                    <img src="./C0000000000128B.png" style="width: 30px;">
+                    <img src="./C0000000000128A.png" style="width: 30px;">
+                    <img src="./C00000000018FDF.png" style="width: 30px;">
+                    <img src="./C00000000018FDD.png" style="width: 30px;">
+                    <img src="./C00000000018FDC.png" style="width: 30px;">
+                    <img src="./C00000000012C05.png" style="width: 30px;">
+                    <img src="./C00000000012C04.png" style="width: 30px;">
+                    <img src="./C00000000012C0E.png" style="width: 30px;">
+                    <img src="./C00000000012C0A.png" style="width: 30px;">
+                    <img src="./C00000000012C00.png" style="width: 30px;">
+                    <img src="./C00000000012BFD.png" style="width: 30px;">
+                    <img src="./C00000000012BFC.png" style="width: 30px;">
+                    <img src="./C0000000001E5BC.png" style="width: 30px;">
+                    <img src="./C0000000001BDC2.png" style="width: 30px;">
+                    <img src="./C0000000001BAB8.png" style="width: 30px;">
+                    <img src="./C00000000001297.png" style="width: 30px;">
+                    <img src="./C000000000209BB.png" style="width: 30px;">
+                    <img src="./C000000000209BA.png" style="width: 30px;">
+                    <img src="./C000000000209B9.png" style="width: 30px;">
+                    <img src="./C000000000208BE.png" style="width: 30px;">
+                    <img src="./C000000000208BD.png" style="width: 30px;">
+                    <img src="./C000000000208BC.png" style="width: 30px;">
+                    <img src="./C000000000207EA.png" style="width: 30px;">
+                    <img src="./C000000000205EE.png" style="width: 30px;">
+                    <img src="./C00000000020D99.png" style="width: 30px;">
+                    <img src="./C00000000020D98.png" style="width: 30px;">
+                    <img src="./C00000000020D9A.png" style="width: 30px;">
+                    <img src="./C0000000001F270.png" style="width: 30px;">
+                    <img src="./C0000000001F262.png" style="width: 30px;">
+                    <img src="./C0000000001F261.png" style="width: 30px;">
+                    <img src="./C0000000001F260.png" style="width: 30px;">
+                    <img src="./C0000000001F62A.png" style="width: 30px;">
+                    <img src="./C0000000001F25F.png" style="width: 30px;">
+                    <img src="./C0000000001B6D9.png" style="width: 30px;">
+
+                    <img src="./C0000000001B27A.png" style="width: 30px;">
+                    <img src="./C0000000001B279.png" style="width: 30px;">
+                    <img src="./C0000000001B276.png" style="width: 30px;">
+                    <img src="./C0000000001B26F.png" style="width: 30px;">
+                    <img src="./C0000000001B26C.png" style="width: 30px;">
+                </div>
+            </div>
+            <div class="inner" style="color: rgba(255,255,255,.5);">
+              <p>Workshop Styler for <a href="https://github.com/hmmhmmhm/dva-engine">D.Va Engine</a>, by <a href="https://github.com/hmmhmmhm">@hmmhmmhm</a>.<br>Special Thanks for <a href="https://gist.github.com/Zezombye">@Zezombye</a> of <a href="https://gist.github.com/Zezombye/ac5ccef345460635891db5c76454b22c">DumpData</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <input id="hidden_copy" style="opacity: 0; position: absolute;"/>
+    </div>
+
+    <script>
+      window.scrollTo(0, 0)
+
+      // 썸머노트 활성화
+      $('#summernote').summernote('code', '')
+      $('#title').summernote({
+          disableDragAndDrop:true,
+          placeholder: '<p><span style="color: rgb(255, 255, 255);">Please enter the code you want to decorate.</span></p>',
+          tabsize: 4,
+          height: 100,
+          toolbar: [
+              ['color', ['forecolor']],
+              ['view', ['fullscreen']],
+          ],
+          codemirror: { // codemirror options
+              theme: 'monokai'
+          }
+      })
+      $('.note-editable').css('font-size','20px')
+      $('.note-editable').css('color','#fff');
+
+      // 푸터 보이는거 방지용
+      $(function(){
+        $(window).scroll(function(){
+          if($(document).scrollTop() > 30){    
+            $('#footer').addClass("hide")
+          }else{
+            $('#footer').removeClass("hide")
+          }
+        })
+      })
+
+      function rgbToHex ( rgbType ){ 
+        // 컬러값과 쉼표만 남기고 삭제. 
+        var rgb = rgbType.replace( /[^%,.\d]/g, "" )
+
+        // 쉼표(,)를 기준으로 분리해서, 배열에 담기. 
+        rgb = rgb.split( "," )
+
+        // 컬러값이 "%"일 경우, 변환하기. 
+        for ( var x = 0; x < 3; x++ )
+          if ( rgb[ x ].indexOf( "%" ) > -1 ) rgb[ x ] = Math.round( parseFloat( rgb[ x ] ) * 2.55 )
+
+        // 16진수 문자로 변환. 
+        var toHex = function( string ){ 
+          string = parseInt( string, 10 ).toString( 16 )
+          string = ( string.length === 1 ) ? "0" + string : string
+
+          return string
+        }
+        var r = toHex( rgb[ 0 ] )
+        var g = toHex( rgb[ 1 ] )
+        var b = toHex( rgb[ 2 ] )
+        var hexType = r + g + b
+
+        return hexType
+      }
+
+      function convert(){
+        var resultCode = ``
+        var childNodes = document.querySelector('body > div.site-wrapper > div > div > div.inner.cover > div.note-editor.note-frame.panel.panel-default > div.note-editing-area > div.note-editable').childNodes[0]
+
+        // 이거 자체는 이터레이터로 파싱
+        function innerParser(childNodes){
+          if(typeof childNodes['childNodes'] == 'undefined') return
+          for(var childrenItem of childNodes.childNodes){
+            // HTMLCollection(3) [span, span, span]
+
+
+            // 컬러 특정된 거 있으면 파싱
+            var textColorTag = ``
+            if(typeof childrenItem['style'] != 'undefined'
+              && typeof childrenItem['style']['color'] != 'undefined'){
+
+              var childrenItemColor = 
+                childrenItem.style.color.length != 0 ?
+                  rgbToHex(childrenItem.style.color).toUpperCase()
+                  : 'FFFFFF'
+
+              textColorTag += '<FG' + childrenItemColor + 'FF>'
+            }
+
+            // 텍스트 먼저 파싱,
+            var isColoredTextExist = false
+            if(typeof childrenItem['innerText'] != 'undefined'
+              && childrenItem['innerText'].length != 0){
+              isColoredTextExist = true
+              resultCode += textColorTag + childrenItem.innerText
+            }
+
+            if(typeof childrenItem['nodeName'] != 'undefined'){
+              // 이미지 파싱
+              if(typeof childrenItem['src'] != 'undefined'){
+                if(childrenItem.nodeName == 'IMG'
+                    && childrenItem.src.length != 0){
+
+                    var srcParse = childrenItem.src.split('/')
+                    var symbolCode = srcParse[srcParse.length - 1].split('.')[0]
+                    resultCode += '<TX ' + symbolCode + '>'
+                }
+              }
+
+              // 순수 글 파싱
+              if(childrenItem.nodeName == '#text'
+                && typeof childrenItem['nodeValue'] != 'undefined'){
+                  // 얘도 화이트로
+                  // resultCode += `(TODO:순수텍스트:${childrenItem.nodeValue})`
+
+                  // 공백이 아닌 경우, 색상코드 삽입
+                  if(childrenItem.nodeValue.trim().length != 0)
+                    resultCode += '<FGFFFFFFFF>'
+                  resultCode += childrenItem.nodeValue
+              }
+            }
+
+            // 그다음 하위요소 nested parse
+            if(!isColoredTextExist) innerParser(childrenItem)
+          }
+        }
+        innerParser(childNodes)
+        var copyText = document.getElementById("hidden_copy")
+        copyText.value = resultCode
+        copyText.select()
+        document.execCommand("Copy")
+        // hidden_copy
+        alert('Copied!')
+      }
+    </script>
+  </body>
+</html>
