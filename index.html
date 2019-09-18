@@ -18,6 +18,16 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148188673-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-148188673-1');
+    </script>
+
     <!-- Custom styles for this template -->
     <link href="cover.css" rel="stylesheet">
     <style>
@@ -81,8 +91,8 @@
             
             <div class="panel panel-default">
                 <!-- Default panel contents -->
-                <div class="panel-heading">Emoticon & Symbols<br>(You can put the Symbol using Drag & Drop)</div>
-                <div class="panel-body" style="background: #303030;">
+                <div class="panel-heading">Emoticon & Symbols<br>(You can put the Symbol using Click or Touch or Drag & Drop)</div>
+                <div id="icons" class="panel-body" style="background: #303030;">
                     <!-- White Icons -->
                     <img src="./C0000000001F944.png" style="width: 30px;">
                     <img src="./C0000000001F945.png" style="width: 30px;">
@@ -468,6 +478,17 @@
     <script>
       window.scrollTo(0, 0)
 
+      // 이미지 클릭시 에디터에 삽입되는 코드 추가
+      for(var childrenImgs of document.getElementById('icons').children){
+        (function(){
+          var srcParse = childrenImgs.src.split('/')
+          var symbolCode = srcParse[srcParse.length - 1].split('.')[0]
+          childrenImgs.onclick = function(){
+            addIcon(symbolCode)
+          }
+        })()
+      }
+
       // 썸머노트 활성화
       $('#summernote').summernote('code', '')
       $('#title').summernote({
@@ -496,6 +517,12 @@
           }
         })
       })
+
+      function addIcon(iconCode){
+        //$('.note-editable').summernote('pasteHTML', '<img src="./' + iconCode +'.png" style="width: 30px;">')
+        //$('.note-editable').code('pasteHTML', '<img src="./' + iconCode +'.png" style="width: 30px;">')
+        $('#title').summernote('pasteHTML', '<img src="./' + iconCode +'.png" style="width: 30px;">')
+      }
 
       function rgbToHex ( rgbType ){ 
         // 컬러값과 쉼표만 남기고 삭제. 
@@ -590,7 +617,7 @@
         copyText.select()
         document.execCommand("Copy")
         // hidden_copy
-        alert('Copied!')
+        alert('Copied!: ' + resultCode)
       }
     </script>
   </body>
